@@ -1,11 +1,11 @@
 # Real World Project: Database Shard
+##Prerequisites:
+Have Docker, Docker Compose, Mariadb installed
 
-## Building
-
-Run the following command in this directory to build the image.
+## Docker install
 
 ```
-make build-image
+sudo apt install docker-compose
 ```
 
 ## Running
