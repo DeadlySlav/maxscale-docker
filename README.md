@@ -1,5 +1,5 @@
 # Real World Project: Database Shard
-##Prerequisites:
+## Prerequisites:
 Have Docker, Docker Compose, Mariadb installed
 
 ## Docker install
