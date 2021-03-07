@@ -1,7 +1,7 @@
 version: '2'
 services:
     master:
-        image: mariadb:10.3
+        image: mariadb:latest
         environment:
             MYSQL_ALLOW_EMPTY_PASSWORD: 'Y'
         volumes:
@@ -9,40 +9,45 @@ services:
         command: mysqld --log-bin=mariadb-bin --binlog-format=ROW --server-id=3000
         ports:
             - "4001:3306"
-
-    slave1:
-        image: mariadb:10.3
-        depends_on:
-            - master
+            
+            
+    master2:
+        image: mariadb:latest
         environment:
             MYSQL_ALLOW_EMPTY_PASSWORD: 'Y'
         volumes:
-            - ./sql/slave:/docker-entrypoint-initdb.d
-        command: mysqld --log-bin=mariadb-bin --binlog-format=ROW --server-id=3001 --log-slave-updates
-        ports:
-            - "4002:3306"
-
-    slave2:
-        image: mariadb:10.3
-        depends_on:
-            - master
-        environment:
-            MYSQL_ALLOW_EMPTY_PASSWORD: 'Y'
-        volumes:
-            - ./sql/slave:/docker-entrypoint-initdb.d
-        command: mysqld --log-bin=mariadb-bin --binlog-format=ROW --server-id=3002 --log-slave-updates
+            - ./sql/master2:/docker-entrypoint-initdb.d
+        command: mysqld --log-bin=mariadb-bin --binlog-format=ROW --server-id=3000
         ports:
             - "4003:3306"
+
+    
 
     maxscale:
         image: mariadb/maxscale:latest
         depends_on:
             - master
-            - slave1
-            - slave2
+            - master2
         volumes:
             - ./maxscale.cnf.d:/etc/maxscale.cnf.d
         ports:
-            - "4006:4006"  # readwrite port
-            - "4008:4008"  # readonly port
-            - "8989:8989"  # REST API port
+            - 4000:4000
+            - 8989:8989 # rest API port
+            
+    phpmyadmin:
+        image: phpmyadmin/phpmyadmin
+        container_name: phpmyadmin
+        depends_on:
+            - master
+            - master2
+        environment:
+            - PMA_HOST=maxscale
+            - PMA_PORT=4000
+           
+        restart: always
+       
+        ports:
+            - "8080:80"
+            
+        volumes:
+            - /sessions
