@@ -1,10 +1,4 @@
-# MariaDB MaxScale Docker image
-
-This Docker image runs the latest 2.4 version of MariaDB MaxScale.
-
--	[Travis CI:  
-	![build status badge](https://img.shields.io/travis/mariadb-corporation/maxscale-docker/master.svg)](https://travis-ci.org/mariadb-corporation/maxscale-docker/branches)
-
+# Real World Project: Database Shard
 
 ## Building
 
