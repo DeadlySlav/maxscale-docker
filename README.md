@@ -3,11 +3,17 @@
 Have Docker, Docker Compose, Mariadb installed
 
 ## Docker install
-
+```
+sudo apt install docker.io
+```
+## Docker Compose install
 ```
 sudo apt install docker-compose
 ```
-
+## Mariadb install
+```
+sudo apt install mariadb-client
+```
 ## Running
 To pull the latest MaxScale image from docker hub:
 ```
