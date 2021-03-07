@@ -25,13 +25,15 @@ cd maxscale-docker/maxscale/
 ```
 ### Now we need to bring up the containers within the directory
 ```
-docker-compose up -d
+sudo docker-compose up -d
 ```
-
-
-
-
-
+#### It should show 3 containers. (Master 1, Master 2, Maxscale) 
+```
+maxscale_master2_1 is up-to-date
+maxscale_master_1 is up-to-date
+maxscale_maxscale_1 is up-to-date
+phpmyadmin is up-to-date
+```
 
 
 
