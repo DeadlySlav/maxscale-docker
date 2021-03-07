@@ -14,6 +14,27 @@ sudo apt install docker-compose
 ```
 sudo apt install mariadb-client
 ```
+
+### Clone my github in the terminal
+```
+git clone https://github.com/DeadlySlav/maxscale-docker
+```
+### Now we need to access the directroy 
+```
+cd maxscale-docker/maxscale/
+```
+### Now we need to bring up the containers within the directory
+```
+docker-compose up -d
+```
+
+
+
+
+
+
+
+
 ## Running
 To pull the latest MaxScale image from docker hub:
 ```
