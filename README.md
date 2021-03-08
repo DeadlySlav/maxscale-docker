@@ -87,55 +87,46 @@ show databases;
 ```
 ### Then enter this command 
 ```
-SELECT * FROM zipcodes_one.zipcodes_one LIMIT 15;
+SELECT * FROM zipcodes_one.zipcodes_one LIMIT 10;
 ```
 ```
-+---------+-------------+----------------+-------+--------------+-----------+------------+-------------------------+---------------+-----------------+---------------------+------------+
-| Zipcode | ZipCodeType | City           | State | LocationType | Coord_Lat | Coord_Long | Location                | Decommisioned | TaxReturnsFiled | EstimatedPopulation | TotalWages |
-+---------+-------------+----------------+-------+--------------+-----------+------------+-------------------------+---------------+-----------------+---------------------+------------+
-|     705 | STANDARD    | AIBONITO       | PR    | PRIMARY      | 18.14     | -66.26     | NA-US-PR-AIBONITO       | FALSE         |                 |                     |            |
-|     610 | STANDARD    | ANASCO         | PR    | PRIMARY      | 18.28     | -67.14     | NA-US-PR-ANASCO         | FALSE         |                 |                     |            |
-|     611 | PO BOX      | ANGELES        | PR    | PRIMARY      | 18.28     | -66.79     | NA-US-PR-ANGELES        | FALSE         |                 |                     |            |
-|     612 | STANDARD    | ARECIBO        | PR    | PRIMARY      | 18.45     | -66.73     | NA-US-PR-ARECIBO        | FALSE         |                 |                     |            |
-|     601 | STANDARD    | ADJUNTAS       | PR    | PRIMARY      | 18.16     | -66.72     | NA-US-PR-ADJUNTAS       | FALSE         |                 |                     |            |
-|     631 | PO BOX      | CASTANER       | PR    | PRIMARY      | 18.19     | -66.82     | NA-US-PR-CASTANER       | FALSE         |                 |                     |            |
-|     602 | STANDARD    | AGUADA         | PR    | PRIMARY      | 18.38     | -67.18     | NA-US-PR-AGUADA         | FALSE         |                 |                     |            |
-|     603 | STANDARD    | AGUADILLA      | PR    | PRIMARY      | 18.43     | -67.15     | NA-US-PR-AGUADILLA      | FALSE         |                 |                     |            |
-|     604 | PO BOX      | AGUADILLA      | PR    | PRIMARY      | 18.43     | -67.15     | NA-US-PR-AGUADILLA      | FALSE         |                 |                     |            |
-|     605 | PO BOX      | AGUADILLA      | PR    | PRIMARY      | 18.43     | -67.15     | NA-US-PR-AGUADILLA      | FALSE         |                 |                     |            |
-|     703 | STANDARD    | AGUAS BUENAS   | PR    | PRIMARY      | 18.25     | -66.1      | NA-US-PR-AGUAS BUENAS   | FALSE         |                 |                     |            |
-|     704 | STANDARD    | AGUIRRE        | PR    | PRIMARY      | 17.96     | -66.22     | NA-US-PR-AGUIRRE        | FALSE         |                 |                     |            |
-|    7675 | STANDARD    | WESTWOOD       | NJ    | PRIMARY      | 40.98     | -74.03     | NA-US-NJ-WESTWOOD       | FALSE         | 13245           | 24083               | 1089095041 |
-|    7677 | STANDARD    | WOODCLIFF LAKE | NJ    | PRIMARY      | 41.02     | -74.05     | NA-US-NJ-WOODCLIFF LAKE | FALSE         | 2945            | 5471                | 325436960  |
-|    7885 | STANDARD    | WHARTON        | NJ    | PRIMARY      | 40.89     | -74.58     | NA-US-NJ-WHARTON        | FALSE         | 5273            | 8999                | 240827990  |
-+---------+-------------+----------------+-------+--------------+-----------+------------+-------------------------+---------------+-----------------+---------------------+------------+
-15 rows in set (0.001 sec)
++---------+-------------+-----------+-------+--------------+-----------+------------+--------------------+---------------+-----------------+---------------------+------------+
+| Zipcode | ZipCodeType | City      | State | LocationType | Coord_Lat | Coord_Long | Location           | Decommisioned | TaxReturnsFiled | EstimatedPopulation | TotalWages |
++---------+-------------+-----------+-------+--------------+-----------+------------+--------------------+---------------+-----------------+---------------------+------------+
+|     705 | STANDARD    | AIBONITO  | PR    | PRIMARY      | 18.14     | -66.26     | NA-US-PR-AIBONITO  | FALSE         |                 |                     |            |
+|     610 | STANDARD    | ANASCO    | PR    | PRIMARY      | 18.28     | -67.14     | NA-US-PR-ANASCO    | FALSE         |                 |                     |            |
+|     611 | PO BOX      | ANGELES   | PR    | PRIMARY      | 18.28     | -66.79     | NA-US-PR-ANGELES   | FALSE         |                 |                     |            |
+|     612 | STANDARD    | ARECIBO   | PR    | PRIMARY      | 18.45     | -66.73     | NA-US-PR-ARECIBO   | FALSE         |                 |                     |            |
+|     601 | STANDARD    | ADJUNTAS  | PR    | PRIMARY      | 18.16     | -66.72     | NA-US-PR-ADJUNTAS  | FALSE         |                 |                     |            |
+|     631 | PO BOX      | CASTANER  | PR    | PRIMARY      | 18.19     | -66.82     | NA-US-PR-CASTANER  | FALSE         |                 |                     |            |
+|     602 | STANDARD    | AGUADA    | PR    | PRIMARY      | 18.38     | -67.18     | NA-US-PR-AGUADA    | FALSE         |                 |                     |            |
+|     603 | STANDARD    | AGUADILLA | PR    | PRIMARY      | 18.43     | -67.15     | NA-US-PR-AGUADILLA | FALSE         |                 |                     |            |
+|     604 | PO BOX      | AGUADILLA | PR    | PRIMARY      | 18.43     | -67.15     | NA-US-PR-AGUADILLA | FALSE         |                 |                     |            |
+|     605 | PO BOX      | AGUADILLA | PR    | PRIMARY      | 18.43     | -67.15     | NA-US-PR-AGUADILLA | FALSE         |                 |                     |            |
++---------+-------------+-----------+-------+--------------+-----------+------------+--------------------+---------------+-----------------+---------------------+------------+
+10 rows in set (0.000 sec)
+
 ```
 ### Now check from zipcodes_two 
 ```
-SELECT * FROM zipcodes_two.zipcodes_two LIMIT 15;
+SELECT * FROM zipcodes_two.zipcodes_two LIMIT 10;
 ```
 ```
-+---------+-------------+---------------+-------+--------------+-----------+------------+------------------------+---------------+-----------------+---------------------+------------+
-| Zipcode | ZipCodeType | City          | State | LocationType | Coord_Lat | Coord_Long | Location               | Decommisioned | TaxReturnsFiled | EstimatedPopulation | TotalWages |
-+---------+-------------+---------------+-------+--------------+-----------+------------+------------------------+---------------+-----------------+---------------------+------------+
-|   42040 | STANDARD    | FARMINGTON    | KY    | PRIMARY      | 36.67     | -88.53     | NA-US-KY-FARMINGTON    | FALSE         | 465             | 896                 | 11562973   |
-|   41524 | STANDARD    | FEDSCREEK     | KY    | PRIMARY      | 37.4      | -82.24     | NA-US-KY-FEDSCREEK     | FALSE         |                 |                     |            |
-|   42533 | STANDARD    | FERGUSON      | KY    | PRIMARY      | 37.06     | -84.59     | NA-US-KY-FERGUSON      | FALSE         | 429             | 761                 | 9555412    |
-|   40022 | STANDARD    | FINCHVILLE    | KY    | PRIMARY      | 38.15     | -85.31     | NA-US-KY-FINCHVILLE    | FALSE         | 437             | 839                 | 19909942   |
-|   40023 | STANDARD    | FISHERVILLE   | KY    | PRIMARY      | 38.16     | -85.42     | NA-US-KY-FISHERVILLE   | FALSE         | 1884            | 3733                | 113020684  |
-|   41743 | PO BOX      | FISTY         | KY    | PRIMARY      | 37.33     | -83.1      | NA-US-KY-FISTY         | FALSE         |                 |                     |            |
-|   41219 | STANDARD    | FLATGAP       | KY    | PRIMARY      | 37.93     | -82.88     | NA-US-KY-FLATGAP       | FALSE         | 708             | 1397                | 20395667   |
-|   40935 | STANDARD    | FLAT LICK     | KY    | PRIMARY      | 36.82     | -83.76     | NA-US-KY-FLAT LICK     | FALSE         | 752             | 1477                | 14267237   |
-|   40997 | STANDARD    | WALKER        | KY    | PRIMARY      | 36.88     | -83.71     | NA-US-KY-WALKER        | FALSE         |                 |                     |            |
-|   41139 | STANDARD    | FLATWOODS     | KY    | PRIMARY      | 38.51     | -82.72     | NA-US-KY-FLATWOODS     | FALSE         | 3692            | 6748                | 121902277  |
-|   41526 | PO BOX      | FORDS BRANCH  | KY    | PRIMARY      | 37.32     | -82.57     | NA-US-KY-FORDS BRANCH  | FALSE         |                 |                     |            |
-|   42343 | STANDARD    | FORDSVILLE    | KY    | PRIMARY      | 37.63     | -86.71     | NA-US-KY-FORDSVILLE    | FALSE         | 735             | 1360                | 18216579   |
-|   42361 | STANDARD    | OLATON        | KY    | PRIMARY      | 37.53     | -86.7      | NA-US-KY-OLATON        | FALSE         |                 |                     |            |
-|   41527 | STANDARD    | FOREST HILLS  | KY    | PRIMARY      | 37.63     | -82.29     | NA-US-KY-FOREST HILLS  | FALSE         |                 |                     |            |
-|   42223 | STANDARD    | FORT CAMPBELL | KY    | PRIMARY      | 36.65     | -87.54     | NA-US-KY-FORT CAMPBELL | FALSE         | 6776            | 13815               | 129784441  |
-+---------+-------------+---------------+-------+--------------+-----------+------------+------------------------+---------------+-----------------+---------------------+------------+
-15 rows in set (0.046 sec)
++---------+-------------+-------------+-------+--------------+-----------+------------+----------------------+---------------+-----------------+---------------------+------------+
+| Zipcode | ZipCodeType | City        | State | LocationType | Coord_Lat | Coord_Long | Location             | Decommisioned | TaxReturnsFiled | EstimatedPopulation | TotalWages |
++---------+-------------+-------------+-------+--------------+-----------+------------+----------------------+---------------+-----------------+---------------------+------------+
+|   42040 | STANDARD    | FARMINGTON  | KY    | PRIMARY      | 36.67     | -88.53     | NA-US-KY-FARMINGTON  | FALSE         | 465             | 896                 | 11562973   |
+|   41524 | STANDARD    | FEDSCREEK   | KY    | PRIMARY      | 37.4      | -82.24     | NA-US-KY-FEDSCREEK   | FALSE         |                 |                     |            |
+|   42533 | STANDARD    | FERGUSON    | KY    | PRIMARY      | 37.06     | -84.59     | NA-US-KY-FERGUSON    | FALSE         | 429             | 761                 | 9555412    |
+|   40022 | STANDARD    | FINCHVILLE  | KY    | PRIMARY      | 38.15     | -85.31     | NA-US-KY-FINCHVILLE  | FALSE         | 437             | 839                 | 19909942   |
+|   40023 | STANDARD    | FISHERVILLE | KY    | PRIMARY      | 38.16     | -85.42     | NA-US-KY-FISHERVILLE | FALSE         | 1884            | 3733                | 113020684  |
+|   41743 | PO BOX      | FISTY       | KY    | PRIMARY      | 37.33     | -83.1      | NA-US-KY-FISTY       | FALSE         |                 |                     |            |
+|   41219 | STANDARD    | FLATGAP     | KY    | PRIMARY      | 37.93     | -82.88     | NA-US-KY-FLATGAP     | FALSE         | 708             | 1397                | 20395667   |
+|   40935 | STANDARD    | FLAT LICK   | KY    | PRIMARY      | 36.82     | -83.76     | NA-US-KY-FLAT LICK   | FALSE         | 752             | 1477                | 14267237   |
+|   40997 | STANDARD    | WALKER      | KY    | PRIMARY      | 36.88     | -83.71     | NA-US-KY-WALKER      | FALSE         |                 |                     |            |
+|   41139 | STANDARD    | FLATWOODS   | KY    | PRIMARY      | 38.51     | -82.72     | NA-US-KY-FLATWOODS   | FALSE         | 3692            | 6748                | 121902277  |
++---------+-------------+-------------+-------+--------------+-----------+------------+----------------------+---------------+-----------------+---------------------+------------+
+10 rows in set (0.001 sec)
 
 ```
 
