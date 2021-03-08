@@ -12,7 +12,7 @@ sudo apt install docker-compose
 ```
 ## Mariadb install
 ```
-sudo apt install mariadb-client
+sudo apt install mariadb-client-core-10.3 
 ```
 ## Check that Docker is running
 ```
@@ -53,7 +53,26 @@ sudo docker-compose exec maxscale maxctrl list servers
 │ zip_master_two │ master2 │ 3306 │ 0           │ Running         │ 0-3000-31 │
 └────────────────┴─────────┴──────┴─────────────┴─────────────────┴───────────┘
 ```
+### Now enter this to connect using Mariadb
+```
+mariadb -umaxuser -pmaxpwd -h 127.0.0.1 -P 4000
+```
+#### Should like this 
+```
+Welcome to the MariaDB monitor.  Commands end with ; or \g.
+Your MariaDB connection id is 8
+Server version: 10.5.9-MariaDB-1:10.5.9+maria~focal-log mariadb.org binary distribution
 
+Copyright (c) 2000, 2018, Oracle, MariaDB Corporation Ab and others.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+MariaDB [(none)]> 
+```
+### Now enter this command 
+```
+show databases;
+```
 
 
 
