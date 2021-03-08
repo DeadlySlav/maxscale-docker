@@ -85,26 +85,26 @@ show databases;
 +--------------------+
 5 rows in set (0.000 sec)
 ```
-### Then enter this command 
+### Then enter this command to see the last 10 zipcodes in zipcodes_one
 ```
-SELECT * FROM zipcodes_one.zipcodes_one LIMIT 10;
+SELECT * FROM zipcodes_one.zipcodes_one LIMIT 9990,10;
 ```
 ```
-+---------+-------------+-----------+-------+--------------+-----------+------------+--------------------+---------------+-----------------+---------------------+------------+
-| Zipcode | ZipCodeType | City      | State | LocationType | Coord_Lat | Coord_Long | Location           | Decommisioned | TaxReturnsFiled | EstimatedPopulation | TotalWages |
-+---------+-------------+-----------+-------+--------------+-----------+------------+--------------------+---------------+-----------------+---------------------+------------+
-|     705 | STANDARD    | AIBONITO  | PR    | PRIMARY      | 18.14     | -66.26     | NA-US-PR-AIBONITO  | FALSE         |                 |                     |            |
-|     610 | STANDARD    | ANASCO    | PR    | PRIMARY      | 18.28     | -67.14     | NA-US-PR-ANASCO    | FALSE         |                 |                     |            |
-|     611 | PO BOX      | ANGELES   | PR    | PRIMARY      | 18.28     | -66.79     | NA-US-PR-ANGELES   | FALSE         |                 |                     |            |
-|     612 | STANDARD    | ARECIBO   | PR    | PRIMARY      | 18.45     | -66.73     | NA-US-PR-ARECIBO   | FALSE         |                 |                     |            |
-|     601 | STANDARD    | ADJUNTAS  | PR    | PRIMARY      | 18.16     | -66.72     | NA-US-PR-ADJUNTAS  | FALSE         |                 |                     |            |
-|     631 | PO BOX      | CASTANER  | PR    | PRIMARY      | 18.19     | -66.82     | NA-US-PR-CASTANER  | FALSE         |                 |                     |            |
-|     602 | STANDARD    | AGUADA    | PR    | PRIMARY      | 18.38     | -67.18     | NA-US-PR-AGUADA    | FALSE         |                 |                     |            |
-|     603 | STANDARD    | AGUADILLA | PR    | PRIMARY      | 18.43     | -67.15     | NA-US-PR-AGUADILLA | FALSE         |                 |                     |            |
-|     604 | PO BOX      | AGUADILLA | PR    | PRIMARY      | 18.43     | -67.15     | NA-US-PR-AGUADILLA | FALSE         |                 |                     |            |
-|     605 | PO BOX      | AGUADILLA | PR    | PRIMARY      | 18.43     | -67.15     | NA-US-PR-AGUADILLA | FALSE         |                 |                     |            |
-+---------+-------------+-----------+-------+--------------+-----------+------------+--------------------+---------------+-----------------+---------------------+------------+
-10 rows in set (0.000 sec)
++---------+-------------+----------------+-------+--------------+-----------+------------+-------------------------+---------------+-----------------+---------------------+------------+
+| Zipcode | ZipCodeType | City           | State | LocationType | Coord_Lat | Coord_Long | Location                | Decommisioned | TaxReturnsFiled | EstimatedPopulation | TotalWages |
++---------+-------------+----------------+-------+--------------+-----------+------------+-------------------------+---------------+-----------------+---------------------+------------+
+|   40843 | STANDARD    | HOLMES MILL    | KY    | PRIMARY      | 36.86     | -83        | NA-US-KY-HOLMES MILL    | FALSE         |                 |                     |            |
+|   41425 | STANDARD    | EZEL           | KY    | PRIMARY      | 37.89     | -83.44     | NA-US-KY-EZEL           | FALSE         | 390             | 801                 | 10204009   |
+|   40118 | STANDARD    | FAIRDALE       | KY    | PRIMARY      | 38.11     | -85.75     | NA-US-KY-FAIRDALE       | FALSE         | 4398            | 7635                | 122449930  |
+|   40020 | PO BOX      | FAIRFIELD      | KY    | PRIMARY      | 37.93     | -85.38     | NA-US-KY-FAIRFIELD      | FALSE         |                 |                     |            |
+|   42221 | PO BOX      | FAIRVIEW       | KY    | PRIMARY      | 36.84     | -87.31     | NA-US-KY-FAIRVIEW       | FALSE         |                 |                     |            |
+|   41426 | PO BOX      | FALCON         | KY    | PRIMARY      | 37.78     | -83        | NA-US-KY-FALCON         | FALSE         |                 |                     |            |
+|   40932 | PO BOX      | FALL ROCK      | KY    | PRIMARY      | 37.22     | -83.78     | NA-US-KY-FALL ROCK      | FALSE         |                 |                     |            |
+|   40119 | STANDARD    | FALLS OF ROUGH | KY    | PRIMARY      | 37.6      | -86.55     | NA-US-KY-FALLS OF ROUGH | FALSE         | 760             | 1468                | 20771670   |
+|   42039 | STANDARD    | FANCY FARM     | KY    | PRIMARY      | 36.75     | -88.79     | NA-US-KY-FANCY FARM     | FALSE         | 696             | 1317                | 20643485   |
+|   40319 | PO BOX      | FARMERS        | KY    | PRIMARY      | 38.14     | -83.54     | NA-US-KY-FARMERS        | FALSE         |                 |                     |            |
++---------+-------------+----------------+-------+--------------+-----------+------------+-------------------------+---------------+-----------------+---------------------+------------+
+10 rows in set (0.005 sec)
 ```
 
 ### Now check from zipcodes_two 
