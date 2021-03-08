@@ -105,7 +105,6 @@ SELECT * FROM zipcodes_one.zipcodes_one LIMIT 10;
 |     605 | PO BOX      | AGUADILLA | PR    | PRIMARY      | 18.43     | -67.15     | NA-US-PR-AGUADILLA | FALSE         |                 |                     |            |
 +---------+-------------+-----------+-------+--------------+-----------+------------+--------------------+---------------+-----------------+---------------------+------------+
 10 rows in set (0.000 sec)
-
 ```
 ### Now check from zipcodes_two 
 ```
@@ -127,6 +126,29 @@ SELECT * FROM zipcodes_two.zipcodes_two LIMIT 10;
 |   41139 | STANDARD    | FLATWOODS   | KY    | PRIMARY      | 38.51     | -82.72     | NA-US-KY-FLATWOODS   | FALSE         | 3692            | 6748                | 121902277  |
 +---------+-------------+-------------+-------+--------------+-----------+------------+----------------------+---------------+-----------------+---------------------+------------+
 10 rows in set (0.001 sec)
-
 ```
 
+### Now use this command to see the largest zipcode in zipcodes_one
+```
+SELECT Zipcode FROM zipcodes_one.zipcodes_one ORDER BY Zipcode DESC LIMIT 1;
+```
+```
++---------+
+| Zipcode |
++---------+
+|   47750 |
++---------+
+1 row in set (0.008 sec)
+```
+### Now use this command to see the smalled zipcode in zipcodes_two
+```
+SELECT Zipcode FROM zipcodes_two.zipcodes_two ORDER BY Zipcode ASC LIMIT 1;
+```
+```
++---------+
+| Zipcode |
++---------+
+|   38257 |
++---------+
+1 row in set (0.005 sec)
+```
