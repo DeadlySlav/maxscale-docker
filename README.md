@@ -73,7 +73,18 @@ MariaDB [(none)]>
 ```
 show databases;
 ```
-
+```
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| mysql              |
+| performance_schema |
+| zipcodes_one       |
+| zipcodes_two       |
++--------------------+
+5 rows in set (0.000 sec)
+```
 
 
 
