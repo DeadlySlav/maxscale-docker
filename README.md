@@ -113,6 +113,29 @@ SELECT * FROM zipcodes_one.zipcodes_one LIMIT 15;
 ```
 ### Now check from zipcodes_two 
 ```
+SELECT * FROM zipcodes_two.zipcodes_two LIMIT 15;
+```
+```
++---------+-------------+---------------+-------+--------------+-----------+------------+------------------------+---------------+-----------------+---------------------+------------+
+| Zipcode | ZipCodeType | City          | State | LocationType | Coord_Lat | Coord_Long | Location               | Decommisioned | TaxReturnsFiled | EstimatedPopulation | TotalWages |
++---------+-------------+---------------+-------+--------------+-----------+------------+------------------------+---------------+-----------------+---------------------+------------+
+|   42040 | STANDARD    | FARMINGTON    | KY    | PRIMARY      | 36.67     | -88.53     | NA-US-KY-FARMINGTON    | FALSE         | 465             | 896                 | 11562973   |
+|   41524 | STANDARD    | FEDSCREEK     | KY    | PRIMARY      | 37.4      | -82.24     | NA-US-KY-FEDSCREEK     | FALSE         |                 |                     |            |
+|   42533 | STANDARD    | FERGUSON      | KY    | PRIMARY      | 37.06     | -84.59     | NA-US-KY-FERGUSON      | FALSE         | 429             | 761                 | 9555412    |
+|   40022 | STANDARD    | FINCHVILLE    | KY    | PRIMARY      | 38.15     | -85.31     | NA-US-KY-FINCHVILLE    | FALSE         | 437             | 839                 | 19909942   |
+|   40023 | STANDARD    | FISHERVILLE   | KY    | PRIMARY      | 38.16     | -85.42     | NA-US-KY-FISHERVILLE   | FALSE         | 1884            | 3733                | 113020684  |
+|   41743 | PO BOX      | FISTY         | KY    | PRIMARY      | 37.33     | -83.1      | NA-US-KY-FISTY         | FALSE         |                 |                     |            |
+|   41219 | STANDARD    | FLATGAP       | KY    | PRIMARY      | 37.93     | -82.88     | NA-US-KY-FLATGAP       | FALSE         | 708             | 1397                | 20395667   |
+|   40935 | STANDARD    | FLAT LICK     | KY    | PRIMARY      | 36.82     | -83.76     | NA-US-KY-FLAT LICK     | FALSE         | 752             | 1477                | 14267237   |
+|   40997 | STANDARD    | WALKER        | KY    | PRIMARY      | 36.88     | -83.71     | NA-US-KY-WALKER        | FALSE         |                 |                     |            |
+|   41139 | STANDARD    | FLATWOODS     | KY    | PRIMARY      | 38.51     | -82.72     | NA-US-KY-FLATWOODS     | FALSE         | 3692            | 6748                | 121902277  |
+|   41526 | PO BOX      | FORDS BRANCH  | KY    | PRIMARY      | 37.32     | -82.57     | NA-US-KY-FORDS BRANCH  | FALSE         |                 |                     |            |
+|   42343 | STANDARD    | FORDSVILLE    | KY    | PRIMARY      | 37.63     | -86.71     | NA-US-KY-FORDSVILLE    | FALSE         | 735             | 1360                | 18216579   |
+|   42361 | STANDARD    | OLATON        | KY    | PRIMARY      | 37.53     | -86.7      | NA-US-KY-OLATON        | FALSE         |                 |                     |            |
+|   41527 | STANDARD    | FOREST HILLS  | KY    | PRIMARY      | 37.63     | -82.29     | NA-US-KY-FOREST HILLS  | FALSE         |                 |                     |            |
+|   42223 | STANDARD    | FORT CAMPBELL | KY    | PRIMARY      | 36.65     | -87.54     | NA-US-KY-FORT CAMPBELL | FALSE         | 6776            | 13815               | 129784441  |
++---------+-------------+---------------+-------+--------------+-----------+------------+------------------------+---------------+-----------------+---------------------+------------+
+15 rows in set (0.046 sec)
 
 ```
 
